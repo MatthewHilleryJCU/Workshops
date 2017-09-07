@@ -1,19 +1,10 @@
 numbers = []
-nums = 5
-
-for i in range(1, nums + 1):
-    number = int(input("Number " + str(i) + ": "))
+for i in range(5):
+    number = int(input("Number: "))
     numbers.append(number)
 
-print(numbers)
-
-print("The first number is " + str(numbers[0]))
-print("The last number is " + str(numbers[4]))
-
-numbers.sort()
-
-print("The smallest number is " + str(numbers[0]))
-print("The largest number is " + str(numbers[4]))
-print("The average number is " + str(sum(numbers)/len(numbers)))
-
-
+print("The first number is", numbers[0])
+print("The last number is", numbers[-1])
+print("The smallest number is", min(numbers))
+print("The largest number is", max(numbers))
+print("The average of the numbers is", sum(numbers) / len(numbers))
